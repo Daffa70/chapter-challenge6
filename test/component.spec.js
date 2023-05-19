@@ -5,7 +5,7 @@ const component = {
   id: null,
   name: "Baterai 5000 mAh",
   description: "Baterai berkapasitas 5000 mAh",
-  supplier_id: [1, 11],
+  supplier_id: [1],
 };
 
 describe("TEST /components post endpoint", () => {
@@ -225,7 +225,7 @@ describe("TEST /add-supplier-component post endpoint", () => {
     });
   });
 
-  test("Tambah component nama kosong (negatif)", async () => {
+  test("Tambah component data exist (negatif)", async () => {
     const component_supplier = {
       component_id: 5,
       supplier_id: 1,
