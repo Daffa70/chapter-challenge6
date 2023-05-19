@@ -3,7 +3,7 @@ const {
   Component,
   ComponentSupplier,
   Product,
-} = require("../models");
+} = require("../db/models");
 
 module.exports = {
   index: async (req, res, next) => {

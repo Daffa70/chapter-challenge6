@@ -1,8 +1,8 @@
 const express = require("express");
 const router = express.Router();
-const component = require("../controller/component");
-const supplier = require("../controller/supplier");
-const product = require("../controller/product");
+const component = require("../controllers/component");
+const supplier = require("../controllers/supplier");
+const product = require("../controllers/product");
 
 router.get("/", (req, res) =>
   res.status(200).json({
