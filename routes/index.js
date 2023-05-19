@@ -41,4 +41,13 @@ router.delete(
   product.deleteProductComponent
 );
 
+router.get("/error", (req, res) => {
+  let data = {
+    status: false,
+    message: "error!",
+    data: null,
+  };
+  return res.status(500).json(data);
+});
+
 module.exports = router;
